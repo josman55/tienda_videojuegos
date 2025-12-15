@@ -17,7 +17,7 @@
       
     </div>
     <br/>
-    {% if current_user.is_authentificated and current_user.is_admin() %}
+    {% if current_user.is_authenticated and current_user.is_admin() %}
     <a class="btn btn-primary" href="{{url_for('articulos_new')}}" role="button">Nuevo videojuego</a>
     {% endif %}
     <br/>
