@@ -7,7 +7,7 @@
     {% if not perfil %}
       <h3>Registro de usuario</h3>  
     {% else %}
-      <h3>Perfil de {{session["username"]}}</h3>  
+      <h3>Perfil de {{current_user.username}}</h3>  
     {% endif %}
     {% for field, errors in form.errors.items() %}
       <div class="alert alert-danger">
